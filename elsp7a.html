@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/elsp7a.css">
+    <title>Document</title>
+</head>
+<body>
+     <!--===== HEADER =====-->
+     <header class="header">
+        <!--div class="nav_toggle">
+            <i class="bx bx-plus" onclick="add()"></i>
+        </div-->
+        <!-- <div class="nav_toggle">
+            <i class='bx bx-palette' id="palette-button" onclick="theme()"></i>
+        </div> -->
+
+        <div class="nav_toggle">
+            <i class='bx bx-moon theme_button' id="theme-button"></i>
+        </div>
+
+        <div class="header_title">
+            مسبحة إلكترونية                 
+        </div>
+
+        <div class="nav_toggle">
+            <i class="bx bx-menu" id="nav-toggle" onclick="menu()"></i>
+        </div>
+    </header>
+
+    <div class="div_palette" id="div-palette"><div class="palette">
+        <div id="picker"></div>
+    </div></div>
+
+    <nav class="nav_menu" id="nav-menu">
+        <div class="nav_item active">
+            <div class="nav_title">أستغفر اللّه</div>
+            <div class="score_lab">0</div>
+        </div>
+        <div class="nav_item">
+            <div class="nav_title">سبحان اللّه</div>
+            <div class="score_lab">0</div>
+        </div>
+        <div class="nav_item">
+            <div class="nav_title">الحمد للّه</div>
+            <div class="score_lab">0</div>
+        </div>
+        <div class="nav_item">
+            <div class="nav_title">اللّه أكبر</div>
+            <div class="score_lab">0</div>
+        </div>
+        <div class="nav_item">
+            <div class="nav_title">لا إله إلا اللّه</div>
+            <div class="score_lab">0</div>
+        </div>
+    </nav>
+     <!--===== MAIN =====-->
+     <main class="main" onclick="closeAll()">
+        <div class="div_score" id="score-lab">0</div>
+        
+        <div class="circle_div" onclick="incre_score()">
+            <h2 class="title_div" id="title-div">أستغفر اللّه</h2>
+            <img src="">
+        </div>
+        <div>
+            <div class="reset_button" id="reset-button" onclick="reset_score()">إعادة</div>
+        </div>
+        
+    </main>
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <hr>
+        <p>Made By mohamed elhariri &#169; 2024</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="js/index.js"></script>
+</body>
+</html>
